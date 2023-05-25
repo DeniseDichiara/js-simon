@@ -1,7 +1,10 @@
 const totalTimeInSecond = new Date ('May 26, 23 16:20:30 ');
- console.log(totalTimeInSecond.getSeconds());
+console.log(totalTimeInSecond.getSeconds());
 
-//*const totalTimeMinutes = 60;
+
+const totalTimeMinutes = new Date('May 26, 23 16:20:30 ');
+console.log(totalTimeMinutes.getMinutes());
+
 
 //*const totalTimeHours = 60
 
