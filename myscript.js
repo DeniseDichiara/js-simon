@@ -1,4 +1,5 @@
-const totalTimeInSecond = 10000;
+const totalTimeInSecond = new Date ('May 26, 23 16:20:30 ');
+ console.log(totalTimeInSecond.getSeconds());
 
 //*const totalTimeMinutes = 60;
 
@@ -6,9 +7,9 @@ const totalTimeInSecond = 10000;
 
 //*const totalTimeDay = 60
 
-let secondToShow = 10;
+//let secondToShow = 10;
 
-const countDown = setInterval(function(){
+/**const countDown = setInterval(function(){
     secondToShow--;
     console.log(secondToShow);
     clearInterval(countDown);
