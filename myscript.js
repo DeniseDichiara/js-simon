@@ -1,14 +1,18 @@
-const totalTimeInSecond = new Date ('May 26, 23 13:30:00 ');
+const totalTimeInSecond = new Date ('May 25, 23 13:30:00 ');
 console.log(totalTimeInSecond.getSeconds());
 
 
-const totalTimeMinutes = new Date('May 26, 23 13:30:00 ');
+const totalTimeMinutes = new Date('May 25, 23 13:30:00 ');
 console.log(totalTimeMinutes.getMinutes());
 
-const totalTimeHours = new Date('May 26, 23 13:30:00 ');
+const totalTimeHours = new Date('May 25, 23 13:30:00 ');
 console.log(totalTimeMinutes.getHours());
 
 const actualDate = (15 * 60 * 60 * 1000)
+
+let secondToShow =54000
+
+//const expiryDate = 
 
 
 //let secondToShow = 10;
