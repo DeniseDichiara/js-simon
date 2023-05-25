@@ -1,14 +1,15 @@
-const totalTimeInSecond = new Date ('May 26, 23 16:20:30 ');
+const totalTimeInSecond = new Date ('May 26, 23 13:30:00 ');
 console.log(totalTimeInSecond.getSeconds());
 
 
-const totalTimeMinutes = new Date('May 26, 23 16:20:30 ');
+const totalTimeMinutes = new Date('May 26, 23 13:30:00 ');
 console.log(totalTimeMinutes.getMinutes());
 
-const totalTimeHours = new Date('May 26, 23 16:20:30 ');
+const totalTimeHours = new Date('May 26, 23 13:30:00 ');
 console.log(totalTimeMinutes.getHours());
 
-//*const totalTimeDay = 60
+const actualDate = (15 * 60 * 60 * 1000)
+
 
 //let secondToShow = 10;
 
