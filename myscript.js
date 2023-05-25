@@ -25,8 +25,12 @@ const actualDate = (15 * 60 * 60 * 1000)
 
 //? tempo totale (20 * 60 * 60 * 1000) 
 
-
-/**setTimeout(function (){
+setTimeout(function (){
     alert('Inizia la lezione!!');
     clearInterval(countDown);
-}, totalTimeInSecond); */
+}, totalTimeInSecond);*/
+
+setTimeout(function (){
+    alert('Inizia la lezione!!');
+    //clearInterval(countDown);
+}, actualDate);
