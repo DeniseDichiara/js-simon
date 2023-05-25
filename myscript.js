@@ -5,8 +5,8 @@ console.log(totalTimeInSecond.getSeconds());
 const totalTimeMinutes = new Date('May 26, 23 16:20:30 ');
 console.log(totalTimeMinutes.getMinutes());
 
-
-//*const totalTimeHours = 60
+const totalTimeHours = new Date('May 26, 23 16:20:30 ');
+console.log(totalTimeMinutes.getHours());
 
 //*const totalTimeDay = 60
 
