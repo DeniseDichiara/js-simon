@@ -1,40 +1,27 @@
-const totalTimeInSecond = new Date ('May 25, 23 13:30:00 ');
-console.log(totalTimeInSecond.getSeconds());
+const expiryDate = new Date("May 26, 2023 09:30:00").getTime();
+
+const countDown = setInterval(function(){
+    const actualDate = new Date().getTime();
+
+    const remainingTime = expiryDate - actualDate ;
+    
+    const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+
+    const seconds = Math.floor((remainingTime % (1000 * 60)) / (1000));
 
 
-const totalTimeMinutes = new Date('May 25, 23 13:30:00 ');
-console.log(totalTimeMinutes.getMinutes());
+    document.getElementById('time-to-count-h').innerHTML = hours;
+    document.getElementById('time-to-count-m').innerHTML = minutes;
+    document.getElementById('time-to-count-s').innerHTML = seconds;
 
-const totalTimeHours = new Date('May 25, 23 13:30:00 ');
-console.log(totalTimeMinutes.getHours());
-
-const actualDate = (15 * 60 * 60 * 1000)
-
-let secondToShow =54000
-
-//const expiryDate = 
+    document.getElementById('time-to-h-m-s').innerHTML = 'Hours ' + 'Minutes ' + 'Seconds';
 
 
-//let secondToShow = 10;
+    if(remainingTime < 0){
+        clearInterval(countDown);
+        document.getElementById('time-to-count').innerHTML = 'YOUR CLASS STARTS NOW!!'
+    }
 
-/**const countDown = setInterval(function(){
-    secondToShow--;
-    console.log(secondToShow);
-    clearInterval(countDown);
-
-    alert('Inizia la lezione!!');
-}, 10000);
-
-
-
-//? tempo totale (20 * 60 * 60 * 1000) 
-
-setTimeout(function (){
-    alert('Inizia la lezione!!');
-    clearInterval(countDown);
-}, totalTimeInSecond);*/
-
-setTimeout(function (){
-    alert('Inizia la lezione!!');
-    //clearInterval(countDown);
-}, actualDate);
+}, 1000);
