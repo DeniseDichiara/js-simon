@@ -16,7 +16,10 @@ const countDown = setInterval(function(){
     document.getElementById('time-to-count-m').innerHTML = minutes;
     document.getElementById('time-to-count-s').innerHTML = seconds;
 
-    document.getElementById('time-to-h-m-s').innerHTML = 'Hours ' + 'Minutes ' + 'Seconds';
+    document.getElementById('time-to-h').innerHTML = 'Hours ';
+    document.getElementById('time-to-m').innerHTML = 'Minutes ';
+    document.getElementById('time-to-s').innerHTML = 'Seconds';
+
 
 
     if(remainingTime < 0){
