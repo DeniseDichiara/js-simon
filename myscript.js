@@ -11,15 +11,17 @@ let secondToShow = 10;
 const countDown = setInterval(function(){
     secondToShow--;
     console.log(secondToShow);
-    
-}, 10000)
+    clearInterval(countDown);
+
+    alert('Inizia la lezione!!');
+}, 10000);
 
 
 
 //? tempo totale (20 * 60 * 60 * 1000) 
 
 
-setTimeout(function (){
+/**setTimeout(function (){
     alert('Inizia la lezione!!');
     clearInterval(countDown);
-}, totalTimeInSecond);
+}, totalTimeInSecond); */
